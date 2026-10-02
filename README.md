@@ -51,13 +51,8 @@ Everything videowatch creates lives next to the source video:
 | `<video> - breakdown.md` | the saved analysis |
 | `zoom_*.jpg` | detail frames pulled during Q&A |
 
-## Advanced: Instagram URLs
-Instagram blocks anonymous downloads, so a public reel URL alone often won't work. To get past it:
-1. Install a browser extension like **"Get cookies.txt LOCALLY"** and export your cookies while logged into Instagram in that browser.
-2. Save the export as `cookies.txt` and tell Claude where it is.
-3. The skill adds `--cookies` to the download command for `instagram.com` URLs only — those cookies are never sent to any other host.
-
-Or skip this entirely: download the reel yourself and drop the file into the chat instead.
+## Instagram URLs
+Instagram often refuses anonymous downloads, so a reel URL alone may fail. videowatch never asks for your Instagram login or cookies. If a download fails, use the local-file route: save the video yourself and give Claude the file path (or drop the file into the chat).
 
 ## Troubleshooting
 Common snags and the fix:
